@@ -1,0 +1,15 @@
+// now let start media query for mobile view
+$phone: 480px;
+@mixin mobile{
+    @media (max-width : $phone) {
+        @content;
+    }
+}
+
+// now let us do media query for tablet view
+$tablet: 980px;
+@mixin tablet {
+    @media (max-width :$tablet) {
+      @content  
+    }
+}

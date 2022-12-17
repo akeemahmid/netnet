@@ -1,0 +1,33 @@
+@mixin flex($dis:null, $dir:null, $ait:null, $fdir:null) {
+    display: $dis;
+    justify-content: $dir;
+    align-items: $ait;
+    flex-direction: $fdir;
+}
+%spacing{
+    width: 100%;
+    padding: 0 60px;
+}
+%margins{
+    margin-top: 3%;
+    width: 100%;
+}
+%font{
+    font-weight: 500;
+    font-size: 18px;
+}
+%buttons{
+    padding: 15px 30px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 50px;
+    outline: none;
+    background: transparent;
+}
+@mixin position{
+    position: fixed;
+    top: 5px;
+    right: -300px;
+    width: 300px;
+    height: 70vh;
+}
